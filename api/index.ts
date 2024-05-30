@@ -9,6 +9,10 @@ const Client = new Genius.Client();
 app.use(express.json());
 app.use(cors());
 
+app.get('/', (req:Request, res : Response) => {
+    res.send({'Message' : 'Hello'})
+})
+
 app.get('/search', async (req: Request, res: Response) => {
     const query: string | undefined = req.query.query as string;
     if (!query) {
