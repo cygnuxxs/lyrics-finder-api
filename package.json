@@ -1,0 +1,16 @@
+{
+  "name": "lyrics-finder-api",
+  "version": "1.0.0",
+  "description": "API for songs and lyrics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cygnuxxs",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "genius-lyrics": "^4.4.7"
+  }
+}
