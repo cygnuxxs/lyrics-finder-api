@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 1155;
+const cors = require('cors')
 const Genius = require('genius-lyrics');
 const Client = new Genius.Client();
 
 app.use(express.json());
+app.use(cors())
 
 app.get('/', (req, res) => {
     res.send({'message' : 'Hello'})
